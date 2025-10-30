@@ -200,7 +200,8 @@
                     errEmail.textContent = "Vui lòng nhập email.";
                     isValid = false;
                 } else {
-                    const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
                     if (!emailPattern.test(email)) {
                         errEmail.textContent = "Email không hợp lệ (ví dụ: example@gmail.com).";
                         isValid = false;
