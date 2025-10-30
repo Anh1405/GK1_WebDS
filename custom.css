@@ -1,0 +1,38 @@
+/* --- Nút Ẩn/Hiện --- */
+.btn-toggle {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-toggle:hover {
+    background-color: #e74c3c;
+}
+
+/* --- Danh sách sản phẩm --- */
+.product-list {
+    display: flex;                 /* Hiển thị theo hàng ngang */
+    justify-content: center;       /* Căn giữa các item */
+    align-items: center;           /* Căn giữa theo trục dọc */
+    gap: 30px;                     /* Khoảng cách giữa các hình */
+    flex-wrap: nowrap;             /* Không cho xuống dòng */
+    margin-top: 30px;
+}
+
+/* --- Mỗi sản phẩm --- */
+.product-item {
+    text-align: center;
+}
+
+/* --- Hình ảnh sản phẩm (tuỳ chọn nếu bạn có ảnh) --- */
+.product-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
